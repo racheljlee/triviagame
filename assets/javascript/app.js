@@ -50,19 +50,13 @@ $(document).ready(function () {
     
     // choosing answers with the input radio buttons
     $("input").on("click", function() {
-        console.log("clicked!");
-        console.log($(this).val());
-
         var value = $(this).val();
 
         // this needs to be updated to calculate score correctly
         if (value === "1") { 
             totalScore++;
-        } else {
-            console.log("incorrect");
-        }
+        } 
         $("#total-score").text(totalScore + "/10");
-        console.log(totalScore);
     });
 
     // on click submit button --> show results
