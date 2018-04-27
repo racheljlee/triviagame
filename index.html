@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Adventure Time Trivia</title>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Rubik" rel="stylesheet">
+    
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row header-title">
+            <div class="col-md-12">
+                <h1>Adventure Time Trivia!</h1>
+            </div>
+        </div>
+
+        <div class="row start-game">
+            <div class="col-md-12">
+                <div id="start-image-before"><img src="assets/images/start-1.png"></div>
+                <div id="start-image-after"><img src="assets/images/start-2.png"></div>
+                <button id="start-game" class="btn btn-dark">Start Game</button>
+            </div>
+        </div>
+
+        <div class="row" id="timer-div">
+            <div class="col-md-12">
+                <div class="timer">
+                    <h2>Timer</h2>
+                    <h3 id="timer"></h3>
+                    <p>seconds</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" id="questions">
+            <div class="col-md-12">
+                <div class="questions" id="quiz-questions">
+                    <div id="question1" class="singlequestion">
+                        <p>Which of these are not a princess?</p>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Lumpy Space Princess
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Hotdog Princess
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Embryo Princess
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio" value="1"> 
+                            Grass Princess
+                        </label>
+                    </div>
+                    <hr>
+                    <div id="question2" class="singlequestion">
+                        <p>Who voices LSP?</p>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Justin Roiland
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Tara Strong
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio" value="1"> 
+                            Pendleton Ward
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            John DiMaggio
+                        </label>
+                    </div>
+                    <hr>
+                    <div id="question3" class="singlequestion">
+                        <p>What is Ice King's original name?</p>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Fred
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio" value="1"> 
+                            Simon
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Albert
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            He doesn't have a name
+                        </label>
+                    </div>
+                    <hr>
+                    <div id="question4" class="singlequestion">
+                        <p>Which one of these characters does not live in the treehouse?</p>
+                        <label>
+                            <input type="radio" name="optradio" value="1"> 
+                            Princess Bubblegum
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Finn
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Jake
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            BMO
+                        </label>
+                    </div>
+                    <hr>
+                    <div id="question5" class="singlequestion">
+                        <p>What language does Lady Rainicorn speak?</p>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Japanese
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Rainicornese
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio" value="1"> 
+                            Korean
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Gibberish
+                        </label>
+                    </div>
+                    <hr>
+                    <div id="question6" class="singlequestion">
+                        <p>What gender is Gunter?</p>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Male
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio" value="1"> 
+                            Female
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Unknown
+                        </label>
+                    </div>
+                    <hr>
+                    <div id="question7" class="singlequestion">
+                        <p>What year did Adventure Time debut?</p>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            2010
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            2009
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            2008
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio" value="1"> 
+                            2007
+                        </label>
+                    </div>
+                    <hr>
+                    <div id="question8" class="singlequestion">
+                        <p>Who created Adventure Time?</p>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Dan Harmon
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            J.G. Quintel
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio" value="1"> 
+                            Pendleton Ward
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                             Thurop Van Orman
+                        </label>
+                    </div>
+                    <hr>
+                    <div id="question9" class="singlequestion">
+                        <p>What's the title name of the first  episode that aired?</p>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Trouble in Lumpy Space
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            It Came From the Nightosphere
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            The Enchiridion!
+                        </label>
+                         <label>
+                            <input type="radio" name="optradio" value="1"> 
+                            Slumber Party Panic
+                        </label>
+                    </div>
+                    <hr>
+                    <div id="question10">
+                        <p>In Marcelne's first song that she sings, what does she sing about?</p>
+                        <label>
+                            <input type="radio" name="optradio" value="1"> 
+                            Her dad eating her fries
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            Her ex-boyfriend, Ash, dumping her
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            How she doesn't want to rule the Nightosphere
+                        </label>
+                        <label>
+                            <input type="radio" name="optradio"> 
+                            How silly Finn and Jake are
+                        </label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="row end-game" id="end-game">
+            <div class="col-md-12">
+                <button id="submit-btn" class="btn btn-dark">Submit Game</button>
+            </div>
+        </div>
+
+        <div class="row" id="score-div">
+            <div class="col-md-12">
+                 <div class="total-score">
+                    <h2>Total Score</h2>
+                    <h3 id="total-score">/10</h3>
+                    <p>correct</p>
+                </div>
+            </div>
+         </div>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="assets/javascript/app.js"></script>
+    
+</body>
+</html>
